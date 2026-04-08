@@ -1,0 +1,20 @@
+name: Discord Notification
+on:
+  release:
+    types: [published, edited]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord Webhook Action
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
+          content: "<@&1482100826154598572>"
+          embed-title: "🚀 Neues Release für Battlestar Galactica!"
+          embed-url: "${{ github.event.release.html_url }}"
+          embed-description: "**Version:** `${{ github.event.release.tag_name }}`\n\n${{ github.event.release.body }}"
+          embed-color: 11027200
+          embed-image-url: "https://github.com/Oxx0r/BSG/raw/main/Mods/Workshop/2064475872.png"
+          embed-footer-text: "Cylons, you say?"
