@@ -11,13 +11,13 @@ DisableDirPage=no
 UsePreviousAppDir=no
 
 ; Pfade zu den Dateien im Unterordner "installer"
-SetupIconFile=installer\icon.ico
+SetupIconFile=installer\bsg.ico
 WizardImageFile=installer\banner.bmp
 WizardSmallImageFile=installer\logo_small.bmp
 InfoBeforeFile=installer\readme_vorher.txt
 InfoAfterFile=installer\danke.txt
 
-UninstallDisplayIcon={app}\icon.ico
+UninstallDisplayIcon={app}\bsg.ico
 Compression=lzma2
 SolidCompression=yes
 OutputDir=.
@@ -26,4 +26,4 @@ OutputBaseFilename=Battlestar_Galactica_Installer
 [Files]
 Source: "Mods\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
 ; WICHTIG: Das Icon mit kopieren, damit die Deinstallation ein Icon hat
-Source: "installer\icon.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "installer\bsg.ico"; DestDir: "{app}"; Flags: ignoreversion
