@@ -1,7 +1,7 @@
 name: Discord Notification
 on:
   release:
-    types: [published, edited]
+    types: [published]
 
 jobs:
   notify:
