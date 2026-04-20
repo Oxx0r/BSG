@@ -23,6 +23,10 @@ SolidCompression=yes
 OutputDir=.
 OutputBaseFilename=Battlestar_Galactica_Installer
 
+[InstallDelete]
+; Löscht den "Images Raw"-Cache, damit TTS die neuen Texturen sofort erkennt
+Type: files; Name: "{userdocs}\My Games\Tabletop Simulator\Mods\Images Raw\*"
+
 [Files]
 Source: "Mods\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
 ; WICHTIG: Das Icon mit kopieren, damit die Deinstallation ein Icon hat
