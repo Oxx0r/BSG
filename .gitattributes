@@ -1,0 +1,2 @@
+# Git soll JSON-Dateien nicht als Text behandeln und Zeilenendungen ignorieren
+*.json -text
