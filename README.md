@@ -1,5 +1,5 @@
 ![Vorschau](Mods/Workshop/2064475872.png)
-# BSG
+# Battlestar Galactica
 
 [TTS Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2064475872)
 
